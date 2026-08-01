@@ -1,0 +1,73 @@
+SKAI_REDACT  -  SECURE PDF REDACTION & EDITING
+==============================================
+Fully offline. Your documents never leave your computer.
+
+KEEP THESE FILES TOGETHER IN ONE FOLDER
+---------------------------------------
+   skai_redact.py                        <- the program
+   skai_logo.png / skai_logo_128.png / skai_icon.ico  <- the logo (keep these!)
+   Run SKAI_REDACT.bat                   <- DOUBLE-CLICK THIS to open the tool
+   Build SKAI_REDACT EXE.bat             <- optional: makes a real .exe icon
+   Enable AI Name-Address Detection.bat  <- optional: finds names in paragraphs
+
+
+OPEN THE TOOL (no typing!)
+--------------------------
+DOUBLE-CLICK  "Run SKAI_REDACT.bat".  The window opens. Done.
+(First time, if Windows shows a blue box: "More info" -> "Run anyway".)
+
+
+WHAT THE BUTTONS DO
+-------------------
+Open       - load a PDF
+Merge      - join several PDFs into one
+Split      - save every page as its own PDF
+Compress   - shrink the file (Low / Medium / High) to fit upload limits
+Prev/Next  - change page
+Zoom +/-   - zoom the view
+Redact     - drag a box; that content is PERMANENTLY removed on Save
+Text       - click on the page and type to ADD text (e.g. a replacement value)
+Highlight  - drag over text to highlight
+Underline  - drag to underline
+Pen        - freehand drawing
+Color      - pick colour for highlight / underline / pen
+Undo/Redo  - step back / forward (Ctrl+Z / Ctrl+Y)
+Save       - write your edits to a NEW PDF (original is never changed)
+
+
+AUTOMATIC REDACTION (the fast way)
+----------------------------------
+1. Open your PDF.
+2. Click "Scan (IDs + Name/Address/Ref fields)".
+   -> It puts ORANGE boxes on PAN, GST, Aadhaar, phone, email AND on the
+      values next to labels like Name:, Address:, GSTIN:, Reference No.
+3. Check the orange boxes. Click "Redact All Found".
+4. Click "Save" and pick a new file name. Hidden text is GONE for good.
+
+
+COMPRESS FOR ONLINE UPLOADS
+---------------------------
+Click "Compress", choose a level, pick a save name. Medium roughly halves a
+scanned file; High is smallest. Text-only PDFs are already tiny, so the drop
+is biggest on scanned / image-heavy documents.
+
+
+NAMES & ADDRESSES INSIDE PARAGRAPHS
+-----------------------------------
+The label scan above already catches Name:/Address: fields on forms. For names
+buried in sentences, double-click "Enable AI Name-Address Detection.bat" ONCE,
+reopen SKAI_REDACT, and use the "Scan + Names/Addresses (AI)" button.
+
+
+MAKE A REAL DESKTOP ICON (SKAI_REDACT.exe)
+------------------------------------------
+Double-click "Build SKAI_REDACT EXE.bat" once and wait. The finished program
+appears in a new "dist" folder as SKAI_REDACT.exe - double-click it, copy it
+anywhere, or right-click -> Send to -> Desktop (create shortcut).
+
+
+SECURITY NOTE
+-------------
+Redaction truly DELETES the underlying text (verified) - unlike a plain black
+box in other editors, where the text can still be copied out. For SCANNED
+(photo) documents there is no text layer; the black fill covers the pixels.
